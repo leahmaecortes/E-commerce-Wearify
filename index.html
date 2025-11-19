@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wearify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Header>
+        <nav class="navbar flex container">
+            <a href="#" class="logo">
+                Wear<span>Ify</span>
+            </a>
+
+            <ul class="navlist flex">
+                <li>
+                    <a href="#" class="link link-active">Home</a>
+                </li>
+                <li>
+                    <a href="#new-products" class="link">Shop</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Page</a>
+                </li>
+                <li>
+                    <a href="#latest-blog" class="link">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Contact</a>
+                </li>
+                <li class="nav-icons flex">
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#checkout-section" class="icon icon-active cart-icon-container">
+                        <i class="fa-solid fa-shopping-bag" id="cart-icon"></i>
+                        <span id="cart-count" class="cart-count-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+
+    </Header>
+    <main>
+        <section class="hero">
+            <div class="hero-content flex container">
+                <div>
+                    <h3>Making your style fabulous with Wearify</h3>
+                    <h1>New Collection</h1>
+                    <h4>Big Sale of this week up to <span>30%</span></h4>
+                    <button>Shop Now</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+            <div class="category-container container">
+                <div class="category">
+                    <img src="images/for Men.jpg">
+                    <button>for Men's</button>
+                </div>
+            
+                <div class="category">
+                    <img src="images/for kids.jpg">
+                    <button>for Kid's</button>
+                </div>
+            
+                <div class="category">
+                    <img src="images/for accessories.jpg">
+                    <button>for Acessories</button>
+                </div>
+            
+                <div class="category">
+                    <img src="images/for women.jpg">
+                    <button>for Women's</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="new-products">
+            <h2>New Product</h2>
+            <div class="line"></div>
+
+            <div class="card-container flex wrap">
+                <div class="card">
+                    <img src="images/card-image1.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            New Balance Speed Edition
+                        </p>
+                        <div class="price">
+                            <span class="amount" data-price="100.00">$100.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod1">Add to Cart</button>
+                    </div>
+                </div>
+
+               
+                <div class="card sale">
+                    <img src="images/card-image2.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Leather Black Handbag Out Edition
+                        </p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class="amount" data-price="50.00">$50.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod2">Add to Cart</button>
+                    </div>
+                </div>
+
+           
+                <div class="card new">
+                    <img src="images/card-image3.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Duffle-coat 
+                        </p>
+                        <div class="price">
+                          
+                            <span class="amount" data-price="20.00">$20.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod3">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="card new">
+                    <img src="images/card-image4.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Zara wool blend coat
+                        </p>
+                        <div class="price">
+                          
+                            <span class="amount" data-price="25.00">$25.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod4">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="sale-container">
+                <h3>New Trend 2025</h3>
+                <h1>Women's Collection</h1>
+                <div class="line"></div>
+                <h4>Big sale of this week</h4>
+                <button>shop now</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Best Sale</h2>
+                <div class="line"></div>
+
+            <div class="card-container flex wrap">
+                <div class="card">
+                    <img src="images/card-image5.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Reesee-Black bag
+                        </p>
+                        <div class="price">
+                            <span class="amount" data-price="70.00">$70.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod5">Add to Cart</button>
+                    </div>
+                </div>
+
+               
+                <div class="card new">
+                    <img src="images/card-image6.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Lefran Mini Automatic Windproof Umbrella
+                        </p>
+                        <div class="price">
+                            <span class="amount" data-price="10.00">$10.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod6">Add to Cart</button>
+                    </div>
+                </div>
+
+           
+                <div class="card">
+                    <img src="images/card-image7.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Braided leather bracelet
+                        </p>
+                        <div class="price">
+                          
+                            <span class="amount" data-price="15.00">$15.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod7">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="card sale">
+                    <img src="images/card-image8.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Y-back suspenders-black
+                        </p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class="amount" data-price="13.00">$13.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod8">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="images/card-image9.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Blue denim kitten heel ankle boots
+                        </p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class="amount" data-price="30.00">$30.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod9">Add to Cart</button>
+                    </div>
+                </div>
+
+               
+                <div class="card new">
+                    <img src="images/card-image10.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Guess-Black handbag
+                        </p>
+                        <div class="price">
+                            <span class="amount" data-price="1000.00">$1000.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod10">Add to Cart</button>
+                    </div>
+                </div>
+
+           
+                <div class="card">
+                    <img src="images/card-image11.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            Black roll-top backpack
+                        </p>
+                        <div class="price">
+                          
+                            <span class="amount" data-price="40.00">$40.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod11">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="card new">
+                    <img src="images/card-image12.jpg">
+                    <div class="card-content">
+                        <p class="title">
+                            DG's Drifter Overshirt 
+                        </p>
+                        <div class="price">
+                         <del>$150.00</del>
+                            <span class="amount" data-price="23.00">$23.00</span>
+                        </div>
+                        <button class="add-to-cart" data-product-id="prod12">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+       </div>
+
+    </section>
+
+    <section class="section secondary-bg" id="checkout-section">
+        <div class="container checkout-container">
+            <h2>Your Cart & Checkout</h2>
+            <div class="line"></div>
+            
+            <div class="checkout-content flex wrap">
+                <div class="cart-summary-box">
+                    <h3>Shopping Cart Summary (<span id="summary-item-count">0</span> Items)</h3>
+                    <div id="cart-items-list" class="cart-items-list">
+                        <p class="empty-cart-message">Your cart is empty. Add some products!</p>
+                    </div>
+                    
+                    <div class="cart-totals">
+                        <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                        <p>Shipping: <span id="cart-shipping">$5.00</span></p>
+                        <hr>
+                        <h4>Total: <span id="cart-total">$5.00</span></h4>
+                    </div>
+                </div>
+
+                <form class="delivery-form-box" id="delivery-form">
+                    <h3>Delivery & Payment Details</h3>
+                    <div class="form-group">
+                        <input type="text" id="full-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="delivery-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="address" placeholder="Shipping Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="city" placeholder="City" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="payment-method" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="cod">Cash on Delivery</option>
+                            <option value="card">Credit/Debit Card</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" id="place-order-btn">Place Order</button>
+                </form>
+            </div>
+
+            <div id="order-confirmation" class="order-confirmation" style="display: none;">
+                <h3>🎉 Order Placed Successfully!</h3>
+                <p>Thank you for shopping with Wearify. Your order confirmation details have been sent to your email.</p>
+                <div class="delivery-info-summary">
+                    <h4>Estimated Delivery</h4>
+                    <p>Standard Shipping (3-5 days): **$5.00**</p>
+                    <p>Your package will arrive at the provided address by **Monday, Nov 18, 2025**.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-bg">
+            <div class="container flex wrap">
+                <div class="box">
+                    <i class="fa-solid fa-truck"></i>
+                    <h5>
+                        <a href="#">Free Shipping</a>
+                    </h5>
+                    <p class="des">Free Shipping on order over $99</p>
+                </div>
+                  <div class="box">
+                    <i class="fa-solid fa-money-bill-1"></i>
+                    <h5>
+                        <a href="#">Cash on Delivery</a>
+                    </h5>
+                    <p class="des">The Internet Trend To Repeat</p>
+                </div>
+
+                  <div class="box">
+                    <i class="fa-solid fa-gift"></i>
+                    <h5>
+                        <a href="#">Gift for All</a>
+                    </h5>
+                    <p class="des">Receive Gift When Subscribe</p>
+                </div>
+                  <div class="box">
+                    <i class="fa-solid fa-clock"></i>
+                    <h5>
+                        <a href="#">Opening All Week</a>
+                    </h5>
+                    <p class="des">6.00 am - 17.00pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="latest-blog">
+        <div class="container">
+            <h2>New Latest</h2>
+            <div class="line"></div>
+
+            <div class="blog-container flex wrap">
+                <div class="blog-box">
+                    <img src="images/news-image1.jpg">
+                    <div class="blog-content">
+                        <h3 class="heading">
+                            <a href="#">New Trend 2025</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita ea sint ullam aliquid. Labore?</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </div>
+
+                 <div class="blog-box">
+                    <img src="images/news-image2.jpg">
+                    <div class="blog-content">
+                        <h3 class="heading">
+                            <a href="#">New Trend 2025</a>
+                        </h3>
+                        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita ea sint ullam aliquid. Labore?</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </div>
+
+                 <div class="blog-box">
+                    <img src="images/news-image3.jpg">
+                    <div class="blog-content">
+                        <h3 class="heading">
+                            <a href="#">New Trend 2025</a>
+                        </h3>
+                        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita ea sint ullam aliquid. Labore?</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="secondary-bg">
+            <form class="container flex wrap">
+                <h3>Sign up for Send Newsletter</h3>
+
+                <div class="input-container flex">
+                    <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off">
+                    <button type="submit">Subscribe</button>
+                </div>
+
+                <div class="social-icons flex">
+                    <a href="#" class="media">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                      <a href="#" class="media">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                      <a href="#" class="media">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                      <a href="#" class="media">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                      <a href="#" class="media">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+ </main>
+
+ <footer class="section">
+    <div class="footer-container container flex wrap">
+    <ul class="footer-list">
+        <li>
+           <a href="#" class="footer-link">about us</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">Online store</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">blog</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">contact us</a>
+        </li>
+    </ul>
+     <ul class="footer-list">
+        <li>
+           <a href="#" class="footer-link">login / register</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">your cart</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">wishlist items</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">Your checkout</a>
+        </li>
+    </ul>
+     <ul class="footer-list">
+        <li>
+           <a href="#" class="footer-link">FAQs</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">term of sercies</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">privacy policy</a>
+        </li>
+         <li>
+           <a href="#" class="footer-link">returns</a>
+        </li>
+    </ul>
+    <ul class="footer-list">
+        <li class="footer-logo">
+             <a href="#" class="logo">
+                Wear<span>Ify</span>
+            </a>
+        </li>
+        <li>
+            <p class="detail">ABC City, XYZ Road</p>
+        </li>
+         <li>
+            <p class="detail">+91 123 456 78</p>
+        </li>
+         <li>
+            <p class="detail">wearify@gmail.com</p>
+        </li>
+    </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;2025 
+            <a href="#" class="footer-link">Wearify.</a>
+        </p>
+    </div>
+ </footer>
+
+<script src="main.js"></script>
+</body>
+
+</html>
